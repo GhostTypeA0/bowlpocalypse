@@ -1,0 +1,27 @@
+CSS cheat Sheet
+
+
+margin: space around an item
+
+display: How do you want your item/items to be displayed?
+- block  (stacked on eachother)
+- inline (side by side)
+- flex   (allows for easy alignment of clustered items)
+- grid   (rows and columns)
+- none   (completely removes object from page)
+
+
+flex-direction: do you want your flex to be stacked, or in a line
+- column
+- row
+
+
+justify-content: THIS MOVES CONTENT LEFT AND RIGHT
+align-items: THIS MOVES CONTENT UP AND DOWN
+	- If it doesn't work that's because you have to create room
+
+
+height
+width
+	-% RECORDS HEIGHT OF PARENT. vh & vw & px RECORDS WIDTH AND HEIGHT OF ENTIRE SCREEN. (vh - height, vw width)
+

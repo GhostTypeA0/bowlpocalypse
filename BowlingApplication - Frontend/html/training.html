@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowling Training</title>
+
+    
+    <link rel="stylesheet" href="../stylesheets/training-style.css">
+</head>
+<body>
+
+    <div class = "mainScreen">
+
+        <!--THIS IS WHERE THE STREAKS ARE RECORDED-->
+        <div class = "titleCards">
+
+            <h1>Bowlpocalypse - Consistency Training</h1>
+
+            <div class = "streakCounter">
+                <p style="font-weight: bold;">Bowlpocalypse streak: <span id="bsStreak">0</span></p>
+                <p>Strikes Streak: <span id="strStreak">0</span></p>
+                <br>
+                <p>Strikes Total: <span id="strTotal">0</span></p>
+                <p>Total Shots: <span id="shTotal">0</span></p>
+            </div>
+        </div>
+        <!--THIS IS THE STREAK BUTTONS-->
+        <div class = "btnSection">
+            <button id="bsStreakBtn">BSC +1!!!</button>
+            <button id="strStreakBtn">STRIKE!!! - perfect form</button>
+            <button id="strBadBtn">STRIKE!!! - imperfect form</button>
+            <button id="resetBtn">BAD SHOT!!!</button>
+        </div>
+
+        <button id="fullReset">Reset Everything</button>
+
+    </div>
+    
+    <script src="../scripts/training.js"></script>
+</body>
+</html>
