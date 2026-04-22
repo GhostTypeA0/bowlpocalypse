@@ -10,6 +10,19 @@ const resetBtn = document.getElementById("resetBtn");
 const fullReset = document.getElementById("fullReset");
 
 
+//HIGHSCORES
+//-------------------------------------------------------------------------------------
+const dayBSPB = document.getElementById("dayBSPB");
+const daySSPB = document.getElementById("daySSPB");
+
+const timeBSPB = document.getElementById("timeBSPB");
+const timeSSPB = document.getElementById("timeSSPB");
+
+
+
+let dayBSPBVal = 0;
+let daySSPBVal = 0;
+
 let bsStreakVal = 0;
 let strStreakVal = 0;
 let strTotalVal = 0;
@@ -26,6 +39,13 @@ bsStreakBtn.addEventListener("click", () => {
     bsStreak.textContent = bsStreakVal;
     shTotal.textContent = shTotalVal;
     strStreak.textContent = strStreakVal;
+
+
+    //STREAK BUILDER
+    if (bsStreakVal > dayBSPBVal) {
+        dayBSPBVal++;
+        dayBSPB.textContent = dayBSPBVal;
+    }
 });
 
 
@@ -41,6 +61,17 @@ strStreakBtn.addEventListener("click", () => {
     strStreak.textContent = strStreakVal;
     strTotal.textContent = strTotalVal;
     shTotal.textContent = shTotalVal;
+
+        //STREAK BUILDER
+    if (bsStreakVal > dayBSPBVal) {
+        dayBSPBVal++;
+        dayBSPB.textContent = dayBSPBVal;
+    }
+        //STRIKE STREAK BUILDER
+    if (strStreakVal > daySSPBVal) {
+        daySSPBVal++;
+        daySSPB.textContent = daySSPBVal;
+    }
 });
 
 //IMPERFECT FORM WITH STRIKE INCREASE
@@ -57,6 +88,13 @@ strBadBtn.addEventListener("click", () => {
     shTotal.textContent = shTotalVal;
 
     bsStreak.textContent = bsStreakVal;
+
+
+            //STRIKE STREAK BUILDER
+    if (strStreakVal > daySSPBVal) {
+        daySSPBVal++;
+        daySSPB.textContent = daySSPBVal;
+    }
 });
 
 //A BAD SHOT

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowling Training</title>
+
+    
+    <link rel="stylesheet" href="../stylesheets/training-style.css">
+</head>
+<body>
+
+
+
+    <!--WITH STRIKES DIV-->
+    <div class = "withStrikes">
+        
+        <h1>Bowlpocalypse - Consistency Training</h1>
+
+<!--THIS DIV IS JUST CLASS IS FOR LAYOUT HELP. (To put the dropdown under the h1, and next to the streaks)-->
+        <div class = "sorting">
+            <select>
+                <option>Practice with Strikes</option>
+                <option>Practice without Strikes</option>
+                <option>Practice just Spares</option>
+                <option>Full Game</option>
+            </select>
+            
+            <!--THIS IS WHERE THE STREAKS ARE RECORDED-->
+            <div class = "streakCounter">
+                <p style="font-weight: bold;">Bowlpocalypse streak: <span id="bsStreak">0</span></p>
+                <p>Strikes Streak: <span id="strStreak">0</span></p>
+                <br>
+                <p>Strikes Total: <span id="strTotal">0</span></p>
+                <p>Total Shots: <span id="shTotal">0</span></p>
+            </div>
+        </div>
+
+<!--THIS IS THE ALL TIME STREAK COUNTER SECTION-->
+<div class = "streakBest">
+        <h3><span>SESON STREAK</span><span>-</span>
+            <span><span>BP Streak: </span><span id ="dayBSPB">0</span></span><span>-</span>
+            <span><span>Strike Streak: </span><span id ="daySSPB">0</span></span>
+        </h3>
+</div> 
+<div class = "streakBest">
+        <h3><span>ULTIM STREAK</span><span>-</span>
+            <span><span>BP Streak: </span><span id ="timeBSPB">0</span></span><span>-</span>
+            <span><span>Strike Streak: </span><span id ="timeSSPB">0</span></span>
+        </h3>
+</div>
+
+        <!--THIS IS THE STREAK BUTTONS-->
+        <div class = "btnSection">
+            <button id="bsStreakBtn">BSC +1!!!</button>
+            <button id="strStreakBtn">STRIKE!!! - perfect form</button>
+            <button id="strBadBtn">STRIKE!!! - imperfect form</button>
+            <button id="resetBtn">BAD SHOT!!!</button>
+        </div>
+
+        <button id="fullReset">Reset Everything</button>
+    </div>
+    
+    <script src="../scripts/training.js"></script>
+</body>
+</html>

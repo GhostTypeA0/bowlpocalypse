@@ -1,3 +1,25 @@
+.sorting {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.sorting select {
+margin-right: 6vw;
+}
+
+
+
+
+
+.withStrikes {
+display: block
+}
+.withStrikes.hide {
+display: none;
+}
+
+
 
 
 
@@ -46,7 +68,7 @@ button {
     flex-direction: column;
     flex-wrap: wrap;
 
-    margin-bottom: 15%;
+    margin-bottom: 14vh;
     
     
 }
@@ -61,9 +83,23 @@ button {
 
 
 
+.streakBest {
+    display: flex;
+    justify-content: center;
+}
+
+.streakBest h3 {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+
+    margin: .5vw;
+}
+
+
 /*EXTRA ITEMS CSS*/
 h1 {
-    margin-top: 15%;
+    margin-top: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
